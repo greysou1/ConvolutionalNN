@@ -42,15 +42,16 @@ def load_data(batch_size=10, num_workers=4):
     
     return train_loader, test_loader
 
-def plot(num_epochs, train_loss, train_accuracy, save=0, model=1):
+def plot(num_epochs, train_losses, train_accuracy, save=0, model=1):
     x = np.arange(num_epochs)
 
-    plt.plot(x, train_loss)
+    plt.plot(x, train_losses)
     plt.plot(x, train_accuracy)
     plt.legend(['Train Loss', 'Train Accuracy'])
     
     plt.show()
     if save:
+        print(f'Saving accuracy and loss plot to plots/model_{model}.png')
         plt.savefig(f'plots/model_{model}.png')
 
 def train(model, device, train_loader, optimizer, criterion, epoch, batch_size, num_epochs):
@@ -182,7 +183,7 @@ def run_model(model=1, learning_rate=0.01, batch_size=10, num_epochs=60):
         train_losses.append(train_loss)
         train_accuracies.append(train_accuracy)
 
-        plot(num_epochs, train_loss, train_accuracy, save=1, model=model)
+    plot(num_epochs, train_losses, train_accuracy, save=1, model=model)
 
     print("accuracy is {:2.2f}".format(best_accuracy))
 
@@ -195,7 +196,7 @@ num_epochs = 60
 
 print(('='*10)+'Training model 1'+('='*10))
 print('A fully connected (FC) hidden layer (with 100 neurons) with Sigmoid activation function.')
-print(f'\n{learning_rate = }\n{batch_size = }\n{num_epochs = }\n')
+print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 run_model(model=1, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)    
 
 # Model 2
@@ -205,7 +206,7 @@ num_epochs = 60
 
 print(('='*10)+'Training model 2'+('='*10))
 print('Model 1 + two convolutional layer that pool over 2x2 regions, 40 kernels, stride =1, with kernel size of 5x5.')
-print(f'\n{learning_rate = }\n{batch_size = }\n{num_epochs = }\n')
+print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(model=2, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
 
@@ -216,7 +217,7 @@ num_epochs = 60
 
 print(('='*10)+'Training model 3'+('='*10))
 print('Model 2 + replace Sigmoid with ReLU with new learning rate')
-print(f'\n{learning_rate = }\n{batch_size = }\n{num_epochs = }\n')
+print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(model=3, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
 
@@ -227,7 +228,7 @@ num_epochs = 60
 
 print(('='*10)+'Training model 4'+('='*10))
 print('Model 3 + another fully connected (FC) layer (with 100 neurons')
-print(f'\n{learning_rate = }\n{batch_size = }\n{num_epochs = }\n')
+print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(model=4, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
 
@@ -238,6 +239,6 @@ num_epochs = 40
 
 print(('='*10)+'Training model 5'+('='*10))
 print('Model 4 + Changed the neurons numbers in FC layers into 1000 with Dropout (with a rate of 0.5).')
-print(f'\n{learning_rate = }\n{batch_size = }\n{num_epochs = }\n')
+print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(model=5, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
