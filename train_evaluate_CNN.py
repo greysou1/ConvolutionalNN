@@ -42,17 +42,17 @@ def load_data(batch_size=10, num_workers=4):
     
     return train_loader, test_loader
 
-def plot(num_epochs, train_losses, train_accuracy, save=0, model=1):
+def plot(num_epochs, train_losses, train_accuracies, save=0, mode=1):
     x = np.arange(num_epochs)
 
     plt.plot(x, train_losses)
-    plt.plot(x, train_accuracy)
+    plt.plot(x, train_accuracies)
     plt.legend(['Train Loss', 'Train Accuracy'])
     
-    plt.show()
     if save:
-        print(f'Saving accuracy and loss plot to plots/model_{model}.png')
-        plt.savefig(f'plots/model_{model}.png')
+        plt.savefig(f'plots/model_{mode}.jpg')
+    
+    plt.show()
 
 def train(model, device, train_loader, optimizer, criterion, epoch, batch_size, num_epochs):
     '''
@@ -102,11 +102,11 @@ def train(model, device, train_loader, optimizer, criterion, epoch, batch_size, 
         
         _, predictions = output.max(1)
         correct += (predictions == target).sum()
-        print(f'Training epoch: ({epoch}/{num_epochs}) batch: ({batch_idx}/{len(train_loader)})', end='\r') #. Acc: {correct}/{(batch_idx+1) * batch_size}, {100. * correct / ((batch_idx+1) * batch_size)}', end='\r')
+        print(f'Training epoch: ({epoch}/{num_epochs}) batch: ({batch_idx+1}/{len(train_loader)})', end='\r') #. Acc: {correct}/{(batch_idx+1) * batch_size}, {100. * correct / ((batch_idx+1) * batch_size)}', end='\r')
         
     train_loss = float(np.mean(losses))
     train_acc = correct / ((batch_idx+1) * batch_size)
-    print('Train set ({}/{}): Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(epoch, num_epochs,
+    print('\nTrain set ({}/{}): Average loss: {:.4f}, Accuracy: {}/{} ({:.0f}%)\n'.format(epoch, num_epochs,
         float(np.mean(losses)), correct, (batch_idx+1) * batch_size,
         100. * correct / ((batch_idx+1) * batch_size)))
     return train_loss, train_acc
@@ -144,7 +144,7 @@ def test(model, device, test_loader, criterion, epoch, num_epochs, batch_size):
             
             _, predictions = output.max(1)
             correct += (predictions == target).sum()
-            print(f'Testing epoch: ({epoch}/{num_epochs}) batch: ({batch_idx}/{len(test_loader)})', end='\r')
+            print(f'Testing epoch: ({epoch}/{num_epochs}) batch: ({batch_idx+1}/{len(test_loader)})', end='\r')
 
     test_loss = float(np.mean(losses))
     accuracy = 100. * correct / len(test_loader.dataset)
@@ -154,12 +154,12 @@ def test(model, device, test_loader, criterion, epoch, num_epochs, batch_size):
     
     return test_loss, accuracy
 
-def run_model(model=1, learning_rate=0.01, batch_size=10, num_epochs=60):
+def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
     image_size = 28*28
     num_classes = 10
 
     # Initialize the model and send to device 
-    model = ConvNet(model, image_size, num_classes).to(device)
+    model = ConvNet(mode, image_size, num_classes).to(device)
     # Define loss function.
     criterion = nn.CrossEntropyLoss()
     # Define optimizer function.
@@ -181,9 +181,9 @@ def run_model(model=1, learning_rate=0.01, batch_size=10, num_epochs=60):
             best_accuracy = test_accuracy
 
         train_losses.append(train_loss)
-        train_accuracies.append(train_accuracy)
+        train_accuracies.append(train_accuracy.cpu().numpy())
 
-    plot(num_epochs, train_losses, train_accuracy, save=1, model=model)
+    plot(num_epochs, train_losses, train_accuracies, save=1, mode=mode)
 
     print("accuracy is {:2.2f}".format(best_accuracy))
 
