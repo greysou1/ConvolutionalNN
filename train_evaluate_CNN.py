@@ -58,7 +58,7 @@ def plot(num_epochs, train_losses, train_accuracies, save=0, mode=1):
     plt.legend(['Train Loss', 'Train Accuracy'])
     
     if save:
-        plt.savefig(f'plots/model_{mode}.jpg')
+        plt.savefig('plots/model_{}.jpg'.format(plot))
     
     plt.show()
 
@@ -110,7 +110,7 @@ def train(model, device, train_loader, optimizer, criterion, epoch, batch_size, 
         
         _, predictions = output.max(1)
         correct += (predictions == target).sum()
-        print('Training epoch: ({}/{}) batch: ({}/{)'.format(epoch, num_epochs, batch_idx+1, len(train_loader)), end='\r') #. Acc: {correct}/{(batch_idx+1) * batch_size}, {100. * correct / ((batch_idx+1) * batch_size)}', end='\r')
+        print('Training epoch: ({}/{}) batch: ({}/{})'.format(epoch, num_epochs, batch_idx+1, len(train_loader)), end='\r') #. Acc: {correct}/{(batch_idx+1) * batch_size}, {100. * correct / ((batch_idx+1) * batch_size)}', end='\r')
         
     train_loss = float(np.mean(losses))
     train_acc = correct / ((batch_idx+1) * batch_size)
