@@ -191,6 +191,7 @@ def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
             best_accuracy = test_accuracy
 
         train_losses.append(train_loss)
+        print('{}'.format(train_accuracy.cpu().numpy()))
         train_accuracies.append(train_accuracy.cpu().numpy())
 
     plot(num_epochs, train_losses, train_accuracies, save=1, mode=mode)
