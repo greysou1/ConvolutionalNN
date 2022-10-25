@@ -43,6 +43,14 @@ def load_data(batch_size=10, num_workers=4):
     return train_loader, test_loader
 
 def plot(num_epochs, train_losses, train_accuracies, save=0, mode=1):
+    ''' this function is to plot the train accuracies and train losses over iterations
+    Args:
+        num_epochs (int): total number of iterations (x-axis)
+        train_losses (list): a list of all the losses after each iteration
+        train_accuracies (list): a list of all the accuracies after each iteration
+        save (int): if save == 1, the plot will be saved as a jpg image
+        mode (int): the model number 
+    '''
     x = np.arange(num_epochs)
 
     plt.plot(x, train_losses)
@@ -102,7 +110,7 @@ def train(model, device, train_loader, optimizer, criterion, epoch, batch_size, 
         
         _, predictions = output.max(1)
         correct += (predictions == target).sum()
-        print(f'Training epoch: ({epoch}/{num_epochs}) batch: ({batch_idx+1}/{len(train_loader)})', end='\r') #. Acc: {correct}/{(batch_idx+1) * batch_size}, {100. * correct / ((batch_idx+1) * batch_size)}', end='\r')
+        print('Training epoch: ({}/{}) batch: ({}/{)'.format(epoch, num_epochs, batch_idx+1, len(train_loader)), end='\r') #. Acc: {correct}/{(batch_idx+1) * batch_size}, {100. * correct / ((batch_idx+1) * batch_size)}', end='\r')
         
     train_loss = float(np.mean(losses))
     train_acc = correct / ((batch_idx+1) * batch_size)
@@ -144,7 +152,7 @@ def test(model, device, test_loader, criterion, epoch, num_epochs, batch_size):
             
             _, predictions = output.max(1)
             correct += (predictions == target).sum()
-            print(f'Testing epoch: ({epoch}/{num_epochs}) batch: ({batch_idx+1}/{len(test_loader)})', end='\r')
+            print('Testing epoch: ({}/{}) batch: ({}/{)'.format(epoch, num_epochs, batch_idx+1, len(test_loader)), end='\r')
 
     test_loss = float(np.mean(losses))
     accuracy = 100. * correct / len(test_loader.dataset)
@@ -155,7 +163,9 @@ def test(model, device, test_loader, criterion, epoch, num_epochs, batch_size):
     return test_loss, accuracy
 
 def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
+    # the input of the model
     image_size = 28*28
+    # the output of the model
     num_classes = 10
 
     # Initialize the model and send to device 
@@ -173,10 +183,10 @@ def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
     train_accuracies = []
     # Run training for n_epochs specified in config 
     for epoch in range(1, num_epochs + 1):
-        train_loss, train_accuracy = train(model, device, train_loader,
-                                            optimizer, criterion, epoch, batch_size, num_epochs)
+        # compute the accuracy and lost for each epoch
+        train_loss, train_accuracy = train(model, device, train_loader, optimizer, criterion, epoch, batch_size, num_epochs)
         test_loss, test_accuracy = test(model, device, test_loader, criterion, epoch, num_epochs, batch_size)
-        
+                
         if test_accuracy > best_accuracy:
             best_accuracy = test_accuracy
 
@@ -189,7 +199,7 @@ def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
 
     print("Training and evaluation finished")
 
-# Model 1
+# ================== Model 1 ==================
 learning_rate = 0.01
 batch_size = 10
 num_epochs = 60
@@ -199,7 +209,7 @@ print('A fully connected (FC) hidden layer (with 100 neurons) with Sigmoid activ
 print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 run_model(model=1, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)    
 
-# Model 2
+# ================== Model 2 ==================
 learning_rate = 0.01
 batch_size = 10
 num_epochs = 60
@@ -210,7 +220,7 @@ print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning
 
 run_model(model=2, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
 
-# Model 3
+# ================== Model 3 ==================
 learning_rate = 0.03
 batch_size = 10
 num_epochs = 60
@@ -221,7 +231,7 @@ print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning
 
 run_model(model=3, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
 
-# Model 4
+# ================== Model 4 ==================
 learning_rate = 0.03
 batch_size = 10
 num_epochs = 60
@@ -232,7 +242,7 @@ print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning
 
 run_model(model=4, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
 
-# Model 5
+# ================== Model 5 ==================
 learning_rate = 0.03
 batch_size = 10
 num_epochs = 40
