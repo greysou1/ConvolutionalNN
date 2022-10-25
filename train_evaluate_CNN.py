@@ -58,7 +58,7 @@ def plot(num_epochs, train_losses, train_accuracies, save=0, mode=1):
     plt.legend(['Train Loss', 'Train Accuracy'])
     
     if save:
-        plt.savefig('plots/model_{}.jpg'.format(plot))
+        plt.savefig('plots/model_{}.jpg'.format(mode))
     
     plt.show()
 
