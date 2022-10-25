@@ -7,7 +7,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import DataLoader
 from torchvision import datasets, transforms
-from torch.utils.tensorboard import SummaryWriter
+# from torch.utils.tensorboard import SummaryWriter
 from ConvNet import ConvNet 
 import argparse
 import numpy as np     
@@ -152,7 +152,7 @@ def test(model, device, test_loader, criterion, epoch, num_epochs, batch_size):
             
             _, predictions = output.max(1)
             correct += (predictions == target).sum()
-            print('Testing epoch: ({}/{}) batch: ({}/{)'.format(epoch, num_epochs, batch_idx+1, len(test_loader)), end='\r')
+            print('Testing epoch: ({}/{}) batch: ({}/{})'.format(epoch, num_epochs, batch_idx+1, len(test_loader)), end='\r')
 
     test_loss = float(np.mean(losses))
     accuracy = 100. * correct / len(test_loader.dataset)
