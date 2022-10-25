@@ -35,6 +35,9 @@ dataset2 = datasets.MNIST('./data/', train=False,
                     transform=transform)
 
 def load_data(batch_size=10, num_workers=4):
+    '''
+    This function loads dataloaders based on the given batchsize
+    '''
     train_loader = DataLoader(dataset1, batch_size = batch_size, 
                             shuffle=True, num_workers=4)
     test_loader = DataLoader(dataset2, batch_size = batch_size, 
@@ -42,23 +45,26 @@ def load_data(batch_size=10, num_workers=4):
     
     return train_loader, test_loader
 
-def plot(num_epochs, train_losses, train_accuracies, save=0, mode=1):
+def plot(num_epochs, train_losses, train_accuracies, best_accuracy, save=0, mode=1):
     ''' this function is to plot the train accuracies and train losses over iterations
     Args:
         num_epochs (int): total number of iterations (x-axis)
         train_losses (list): a list of all the losses after each iteration
         train_accuracies (list): a list of all the accuracies after each iteration
+        best_accuracy (float): the best accuracy of the model
         save (int): if save == 1, the plot will be saved as a jpg image
         mode (int): the model number 
     '''
-    x = np.arange(num_epochs)
+    x = range(1, num_epochs+1)
 
+    # displaying the title
+    plt.title(f'plots/model_{mode}.jpg')
     plt.plot(x, train_losses)
     plt.plot(x, train_accuracies)
-    plt.legend(['Train Loss', 'Train Accuracy'])
+    plt.legend(['Train Loss', 'Train Accuracy'], title=f'Accuracy = {best_accuracy: .2f}')
     
     if save:
-        plt.savefig('plots/model_{}.jpg'.format(mode))
+        plt.savefig(f'plots/model_{mode}.jpg')
     
     plt.show()
 
@@ -163,6 +169,15 @@ def test(model, device, test_loader, criterion, epoch, num_epochs, batch_size):
     return test_loss, accuracy
 
 def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
+    '''
+    this function computes training and testing with the given hyper-parameters 
+    Args:
+        mode (int): which model to run
+        learning_rate (float): the learning rate for the optimizer
+        batch_size (int): how many images does the model see for each batch
+        num_epochs (int): how many times the model sees the entire dataset
+    '''
+    print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
     # the input of the model
     image_size = 28*28
     # the output of the model
@@ -186,74 +201,72 @@ def run_model(mode=1, learning_rate=0.01, batch_size=10, num_epochs=60):
         # compute the accuracy and lost for each epoch
         train_loss, train_accuracy = train(model, device, train_loader, optimizer, criterion, epoch, batch_size, num_epochs)
         test_loss, test_accuracy = test(model, device, test_loader, criterion, epoch, num_epochs, batch_size)
-                
+        
+        # store the best test accuracy
         if test_accuracy > best_accuracy:
             best_accuracy = test_accuracy
 
+        # save the train accuracy and train loss for this epoch so that we can plot it later
         train_losses.append(train_loss)
-        print('{}'.format(train_accuracy.cpu().numpy()))
         train_accuracies.append(train_accuracy.cpu().numpy())
 
-    plot(num_epochs, train_losses, train_accuracies, save=1, mode=mode)
+    # after the training is completed plot the losses and accuracies against the epochs
+    plot(num_epochs, train_losses, train_accuracies, best_accuracy, save=1, mode=mode)
 
     print("accuracy is {:2.2f}".format(best_accuracy))
 
     print("Training and evaluation finished")
 
 # ================== Model 1 ==================
-learning_rate = 0.01
+learning_rate = 0.1
 batch_size = 10
 num_epochs = 60
 
-print('\n\n'+('='*10)+'Training model 1'+('='*10))
+print('\n\n'+('='*32)+' Training model 1 '+('='*32))
 print('A fully connected (FC) hidden layer (with 100 neurons) with Sigmoid activation function.')
-print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 run_model(mode=1, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)    
-print('='*26)
+print('='*80)
+
 # ================== Model 2 ==================
-learning_rate = 0.01
+learning_rate = 0.1
 batch_size = 10
 num_epochs = 60
 
-print(('='*10)+'Training model 2'+('='*10))
+print(('='*32)+' Training model 2 '+('='*32))
 print('Model 1 + two convolutional layer that pool over 2x2 regions, 40 kernels, stride =1, with kernel size of 5x5.')
-print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(mode=2, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
-print('='*26)
+print('='*80)
 
 # ================== Model 3 ==================
 learning_rate = 0.03
 batch_size = 10
 num_epochs = 60
 
-print(('='*10)+'Training model 3'+('='*10))
+print(('='*32)+' Training model 3 '+('='*32))
 print('Model 2 + replace Sigmoid with ReLU with new learning rate')
-print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(mode=3, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
-print('='*26)
+print('='*80)
 
 # ================== Model 4 ==================
 learning_rate = 0.03
 batch_size = 10
 num_epochs = 60
 
-print(('='*10)+'Training model 4'+('='*10))
-print('Model 3 + another fully connected (FC) layer (with 100 neurons')
-print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
+print(('='*32)+' Training model 4 '+('='*32))
+print('Model 3 + another fully connected (FC) layer (with 100 neurons)')
 
 run_model(mode=4, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
-print('='*26)
+print('='*80)
 
 # ================== Model 5 ==================
 learning_rate = 0.03
 batch_size = 10
 num_epochs = 40
 
-print(('='*10)+'Training model 5'+('='*10))
+print(('='*32)+' Training model 5 '+('='*32))
 print('Model 4 + Changed the neurons numbers in FC layers into 1000 with Dropout (with a rate of 0.5).')
-print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
 run_model(mode=5, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
-print('='*26)
+print('='*80)

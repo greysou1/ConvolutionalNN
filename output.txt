@@ -1,0 +1,1736 @@
+================================ Training model 1 ================================
+A fully connected (FC) hidden layer (with 100 neurons) with Sigmoid activation function.
+
+learning_rate = 0.1
+batch_size = 10
+num_epochs = 60
+
+/usr/local/lib/python3.7/dist-packages/torch/utils/data/dataloader.py:566: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  cpuset_checked))
+Training epoch: (1/60) batch: (6000/6000)
+Train set (1/60): Average loss: 0.2639, Accuracy: 55456/60000 (92%)
+
+Testing epoch: (1/60) batch: (1000/1000)
+Test set (1/60): Average loss: 0.1445, Accuracy: 9570/10000 (96%)
+
+
+Train set (2/60): Average loss: 0.1210, Accuracy: 57861/60000 (96%)
+
+
+Test set (2/60): Average loss: 0.1041, Accuracy: 9681/10000 (97%)
+
+
+Train set (3/60): Average loss: 0.0862, Accuracy: 58509/60000 (98%)
+
+
+Test set (3/60): Average loss: 0.0904, Accuracy: 9725/10000 (97%)
+
+
+Train set (4/60): Average loss: 0.0664, Accuracy: 58875/60000 (98%)
+
+
+Test set (4/60): Average loss: 0.0895, Accuracy: 9724/10000 (97%)
+
+
+Train set (5/60): Average loss: 0.0527, Accuracy: 59130/60000 (99%)
+
+
+Test set (5/60): Average loss: 0.0813, Accuracy: 9761/10000 (98%)
+
+Training epoch: (6/60) batch: (6000/6000)
+Train set (6/60): Average loss: 0.0420, Accuracy: 59307/60000 (99%)
+
+Testing epoch: (6/60) batch: (1000/1000)
+Test set (6/60): Average loss: 0.0826, Accuracy: 9762/10000 (98%)
+
+
+Train set (7/60): Average loss: 0.0342, Accuracy: 59472/60000 (99%)
+
+
+Test set (7/60): Average loss: 0.0825, Accuracy: 9750/10000 (98%)
+
+Training epoch: (8/60) batch: (6000/6000)
+Train set (8/60): Average loss: 0.0277, Accuracy: 59615/60000 (99%)
+
+
+Test set (8/60): Average loss: 0.0824, Accuracy: 9747/10000 (97%)
+
+Training epoch: (9/60) batch: (6000/6000)
+Train set (9/60): Average loss: 0.0227, Accuracy: 59706/60000 (100%)
+
+Testing epoch: (9/60) batch: (1000/1000)
+Test set (9/60): Average loss: 0.0758, Accuracy: 9767/10000 (98%)
+
+Training epoch: (10/60) batch: (6000/6000)
+Train set (10/60): Average loss: 0.0190, Accuracy: 59771/60000 (100%)
+
+Testing epoch: (10/60) batch: (1000/1000)
+Test set (10/60): Average loss: 0.0761, Accuracy: 9780/10000 (98%)
+
+Training epoch: (11/60) batch: (6000/6000)
+Train set (11/60): Average loss: 0.0153, Accuracy: 59857/60000 (100%)
+
+Testing epoch: (11/60) batch: (1000/1000)
+Test set (11/60): Average loss: 0.0777, Accuracy: 9773/10000 (98%)
+
+Training epoch: (12/60) batch: (6000/6000)
+Train set (12/60): Average loss: 0.0128, Accuracy: 59889/60000 (100%)
+
+Testing epoch: (12/60) batch: (1000/1000)
+Test set (12/60): Average loss: 0.0752, Accuracy: 9788/10000 (98%)
+
+Training epoch: (13/60) batch: (6000/6000)
+Train set (13/60): Average loss: 0.0108, Accuracy: 59935/60000 (100%)
+
+
+Test set (13/60): Average loss: 0.0764, Accuracy: 9781/10000 (98%)
+
+Training epoch: (14/60) batch: (6000/6000)
+Train set (14/60): Average loss: 0.0090, Accuracy: 59940/60000 (100%)
+
+
+Test set (14/60): Average loss: 0.0738, Accuracy: 9783/10000 (98%)
+
+
+Train set (15/60): Average loss: 0.0077, Accuracy: 59966/60000 (100%)
+
+Testing epoch: (15/60) batch: (1000/1000)
+Test set (15/60): Average loss: 0.0784, Accuracy: 9780/10000 (98%)
+
+Training epoch: (16/60) batch: (6000/6000)
+Train set (16/60): Average loss: 0.0067, Accuracy: 59979/60000 (100%)
+
+Testing epoch: (16/60) batch: (1000/1000)
+Test set (16/60): Average loss: 0.0777, Accuracy: 9787/10000 (98%)
+
+
+Train set (17/60): Average loss: 0.0060, Accuracy: 59985/60000 (100%)
+
+
+Test set (17/60): Average loss: 0.0758, Accuracy: 9783/10000 (98%)
+
+
+Train set (18/60): Average loss: 0.0053, Accuracy: 59994/60000 (100%)
+
+Testing epoch: (18/60) batch: (1000/1000)
+Test set (18/60): Average loss: 0.0760, Accuracy: 9786/10000 (98%)
+
+Training epoch: (19/60) batch: (6000/6000)
+Train set (19/60): Average loss: 0.0048, Accuracy: 59993/60000 (100%)
+
+Testing epoch: (19/60) batch: (1000/1000)
+Test set (19/60): Average loss: 0.0775, Accuracy: 9783/10000 (98%)
+
+Training epoch: (20/60) batch: (6000/6000)
+Train set (20/60): Average loss: 0.0043, Accuracy: 59997/60000 (100%)
+
+Testing epoch: (20/60) batch: (1000/1000)
+Test set (20/60): Average loss: 0.0782, Accuracy: 9780/10000 (98%)
+
+Training epoch: (21/60) batch: (6000/6000)
+Train set (21/60): Average loss: 0.0040, Accuracy: 59997/60000 (100%)
+
+Testing epoch: (21/60) batch: (1000/1000)
+Test set (21/60): Average loss: 0.0778, Accuracy: 9786/10000 (98%)
+
+
+Train set (22/60): Average loss: 0.0037, Accuracy: 59998/60000 (100%)
+
+Testing epoch: (22/60) batch: (1000/1000)
+Test set (22/60): Average loss: 0.0776, Accuracy: 9780/10000 (98%)
+
+Training epoch: (23/60) batch: (6000/6000)
+Train set (23/60): Average loss: 0.0034, Accuracy: 59998/60000 (100%)
+
+Testing epoch: (23/60) batch: (1000/1000)
+Test set (23/60): Average loss: 0.0788, Accuracy: 9784/10000 (98%)
+
+
+Train set (24/60): Average loss: 0.0032, Accuracy: 60000/60000 (100%)
+
+
+Test set (24/60): Average loss: 0.0791, Accuracy: 9788/10000 (98%)
+
+Training epoch: (25/60) batch: (6000/6000)
+Train set (25/60): Average loss: 0.0030, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (25/60) batch: (1000/1000)
+Test set (25/60): Average loss: 0.0795, Accuracy: 9782/10000 (98%)
+
+
+Train set (26/60): Average loss: 0.0028, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (26/60) batch: (1000/1000)
+Test set (26/60): Average loss: 0.0799, Accuracy: 9783/10000 (98%)
+
+Training epoch: (27/60) batch: (6000/6000)
+Train set (27/60): Average loss: 0.0026, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (27/60) batch: (1000/1000)
+Test set (27/60): Average loss: 0.0799, Accuracy: 9791/10000 (98%)
+
+Training epoch: (28/60) batch: (6000/6000)
+Train set (28/60): Average loss: 0.0025, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (28/60) batch: (1000/1000)
+Test set (28/60): Average loss: 0.0803, Accuracy: 9780/10000 (98%)
+
+Training epoch: (29/60) batch: (6000/6000)
+Train set (29/60): Average loss: 0.0024, Accuracy: 60000/60000 (100%)
+
+
+Test set (29/60): Average loss: 0.0806, Accuracy: 9790/10000 (98%)
+
+Training epoch: (30/60) batch: (6000/6000)
+Train set (30/60): Average loss: 0.0022, Accuracy: 60000/60000 (100%)
+
+
+Test set (30/60): Average loss: 0.0820, Accuracy: 9784/10000 (98%)
+
+Training epoch: (31/60) batch: (6000/6000)
+Train set (31/60): Average loss: 0.0021, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (31/60) batch: (1000/1000)
+Test set (31/60): Average loss: 0.0820, Accuracy: 9779/10000 (98%)
+
+Training epoch: (32/60) batch: (6000/6000)
+Train set (32/60): Average loss: 0.0020, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (32/60) batch: (1000/1000)
+Test set (32/60): Average loss: 0.0813, Accuracy: 9784/10000 (98%)
+
+Training epoch: (33/60) batch: (6000/6000)
+Train set (33/60): Average loss: 0.0019, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (33/60) batch: (1000/1000)
+Test set (33/60): Average loss: 0.0825, Accuracy: 9776/10000 (98%)
+
+Training epoch: (34/60) batch: (6000/6000)
+Train set (34/60): Average loss: 0.0019, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (34/60) batch: (1000/1000)
+Test set (34/60): Average loss: 0.0830, Accuracy: 9782/10000 (98%)
+
+
+Train set (35/60): Average loss: 0.0018, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (35/60) batch: (1000/1000)
+Test set (35/60): Average loss: 0.0833, Accuracy: 9782/10000 (98%)
+
+
+Train set (36/60): Average loss: 0.0017, Accuracy: 60000/60000 (100%)
+
+
+Test set (36/60): Average loss: 0.0827, Accuracy: 9779/10000 (98%)
+
+Training epoch: (37/60) batch: (6000/6000)
+Train set (37/60): Average loss: 0.0017, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (37/60) batch: (1000/1000)
+Test set (37/60): Average loss: 0.0835, Accuracy: 9783/10000 (98%)
+
+
+Train set (38/60): Average loss: 0.0016, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (38/60) batch: (1000/1000)
+Test set (38/60): Average loss: 0.0840, Accuracy: 9777/10000 (98%)
+
+
+Train set (39/60): Average loss: 0.0015, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (39/60) batch: (1000/1000)
+Test set (39/60): Average loss: 0.0835, Accuracy: 9782/10000 (98%)
+
+Training epoch: (40/60) batch: (6000/6000)
+Train set (40/60): Average loss: 0.0015, Accuracy: 60000/60000 (100%)
+
+
+Test set (40/60): Average loss: 0.0845, Accuracy: 9781/10000 (98%)
+
+Training epoch: (41/60) batch: (6000/6000)
+Train set (41/60): Average loss: 0.0014, Accuracy: 60000/60000 (100%)
+
+
+Test set (41/60): Average loss: 0.0837, Accuracy: 9786/10000 (98%)
+
+Training epoch: (42/60) batch: (6000/6000)
+Train set (42/60): Average loss: 0.0014, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (42/60) batch: (1000/1000)
+Test set (42/60): Average loss: 0.0845, Accuracy: 9783/10000 (98%)
+
+Training epoch: (43/60) batch: (6000/6000)
+Train set (43/60): Average loss: 0.0014, Accuracy: 60000/60000 (100%)
+
+
+Test set (43/60): Average loss: 0.0849, Accuracy: 9782/10000 (98%)
+
+Training epoch: (44/60) batch: (6000/6000)
+Train set (44/60): Average loss: 0.0013, Accuracy: 60000/60000 (100%)
+
+
+Test set (44/60): Average loss: 0.0849, Accuracy: 9782/10000 (98%)
+
+
+Train set (45/60): Average loss: 0.0013, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (45/60) batch: (1000/1000)
+Test set (45/60): Average loss: 0.0850, Accuracy: 9779/10000 (98%)
+
+Training epoch: (46/60) batch: (6000/6000)
+Train set (46/60): Average loss: 0.0012, Accuracy: 60000/60000 (100%)
+
+
+Test set (46/60): Average loss: 0.0850, Accuracy: 9784/10000 (98%)
+
+Training epoch: (47/60) batch: (6000/6000)
+Train set (47/60): Average loss: 0.0012, Accuracy: 60000/60000 (100%)
+
+
+Test set (47/60): Average loss: 0.0858, Accuracy: 9775/10000 (98%)
+
+Training epoch: (48/60) batch: (6000/6000)
+Train set (48/60): Average loss: 0.0012, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (48/60) batch: (1000/1000)
+Test set (48/60): Average loss: 0.0860, Accuracy: 9780/10000 (98%)
+
+Training epoch: (49/60) batch: (6000/6000)
+Train set (49/60): Average loss: 0.0011, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (49/60) batch: (1000/1000)
+Test set (49/60): Average loss: 0.0866, Accuracy: 9781/10000 (98%)
+
+Training epoch: (50/60) batch: (6000/6000)
+Train set (50/60): Average loss: 0.0011, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (50/60) batch: (1000/1000)
+Test set (50/60): Average loss: 0.0864, Accuracy: 9783/10000 (98%)
+
+Training epoch: (51/60) batch: (6000/6000)
+Train set (51/60): Average loss: 0.0011, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (51/60) batch: (1000/1000)
+Test set (51/60): Average loss: 0.0864, Accuracy: 9781/10000 (98%)
+
+Training epoch: (52/60) batch: (6000/6000)
+Train set (52/60): Average loss: 0.0011, Accuracy: 60000/60000 (100%)
+
+
+Test set (52/60): Average loss: 0.0863, Accuracy: 9784/10000 (98%)
+
+Training epoch: (53/60) batch: (6000/6000)
+Train set (53/60): Average loss: 0.0010, Accuracy: 60000/60000 (100%)
+
+
+Test set (53/60): Average loss: 0.0867, Accuracy: 9782/10000 (98%)
+
+
+Train set (54/60): Average loss: 0.0010, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (54/60) batch: (1000/1000)
+Test set (54/60): Average loss: 0.0864, Accuracy: 9781/10000 (98%)
+
+
+Train set (55/60): Average loss: 0.0010, Accuracy: 60000/60000 (100%)
+
+
+Test set (55/60): Average loss: 0.0869, Accuracy: 9782/10000 (98%)
+
+Training epoch: (56/60) batch: (6000/6000)
+Train set (56/60): Average loss: 0.0010, Accuracy: 60000/60000 (100%)
+
+
+Test set (56/60): Average loss: 0.0867, Accuracy: 9783/10000 (98%)
+
+
+Train set (57/60): Average loss: 0.0009, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (57/60) batch: (1000/1000)
+Test set (57/60): Average loss: 0.0877, Accuracy: 9781/10000 (98%)
+
+Training epoch: (58/60) batch: (6000/6000)
+Train set (58/60): Average loss: 0.0009, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (58/60) batch: (1000/1000)
+Test set (58/60): Average loss: 0.0877, Accuracy: 9780/10000 (98%)
+
+Training epoch: (59/60) batch: (6000/6000)
+Train set (59/60): Average loss: 0.0009, Accuracy: 60000/60000 (100%)
+
+
+Test set (59/60): Average loss: 0.0882, Accuracy: 9783/10000 (98%)
+
+Training epoch: (60/60) batch: (6000/6000)
+Train set (60/60): Average loss: 0.0009, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (60/60) batch: (1000/1000)
+Test set (60/60): Average loss: 0.0880, Accuracy: 9785/10000 (98%)
+
+Accuracy: 97.91%
+Training and evaluation finished
+================================================================================
+
+================================ Training model 2 ================================
+Model 1 + two convolutional layer that pool over 2x2 regions, 40 kernels, stride =1, with kernel size of 5x5.
+
+learning_rate = 0.1
+batch_size = 10
+num_epochs = 60
+
+Training epoch: (1/60) batch: (6000/6000)
+Train set (1/60): Average loss: 0.5919, Accuracy: 47141/60000 (79%)
+
+Testing epoch: (1/60) batch: (1000/1000)
+Test set (1/60): Average loss: 0.0632, Accuracy: 9793/10000 (98%)
+
+Training epoch: (2/60) batch: (6000/6000)
+Train set (2/60): Average loss: 0.0627, Accuracy: 58859/60000 (98%)
+
+Testing epoch: (2/60) batch: (1000/1000)
+Test set (2/60): Average loss: 0.0582, Accuracy: 9820/10000 (98%)
+
+Training epoch: (3/60) batch: (6000/6000)
+Train set (3/60): Average loss: 0.0412, Accuracy: 59227/60000 (99%)
+
+Testing epoch: (3/60) batch: (1000/1000)
+Test set (3/60): Average loss: 0.0396, Accuracy: 9866/10000 (99%)
+
+
+Train set (4/60): Average loss: 0.0292, Accuracy: 59477/60000 (99%)
+
+
+Test set (4/60): Average loss: 0.0340, Accuracy: 9883/10000 (99%)
+
+
+Train set (5/60): Average loss: 0.0206, Accuracy: 59643/60000 (99%)
+
+
+Test set (5/60): Average loss: 0.0315, Accuracy: 9897/10000 (99%)
+
+
+Train set (6/60): Average loss: 0.0157, Accuracy: 59750/60000 (100%)
+
+
+Test set (6/60): Average loss: 0.0297, Accuracy: 9901/10000 (99%)
+
+Training epoch: (7/60) batch: (6000/6000)
+Train set (7/60): Average loss: 0.0113, Accuracy: 59839/60000 (100%)
+
+Testing epoch: (7/60) batch: (1000/1000)
+Test set (7/60): Average loss: 0.0262, Accuracy: 9915/10000 (99%)
+
+Training epoch: (8/60) batch: (6000/6000)
+Train set (8/60): Average loss: 0.0082, Accuracy: 59905/60000 (100%)
+
+Testing epoch: (8/60) batch: (1000/1000)
+Test set (8/60): Average loss: 0.0258, Accuracy: 9914/10000 (99%)
+
+
+Train set (9/60): Average loss: 0.0062, Accuracy: 59934/60000 (100%)
+
+Testing epoch: (9/60) batch: (1000/1000)
+Test set (9/60): Average loss: 0.0261, Accuracy: 9906/10000 (99%)
+
+Training epoch: (10/60) batch: (6000/6000)
+Train set (10/60): Average loss: 0.0049, Accuracy: 59949/60000 (100%)
+
+Testing epoch: (10/60) batch: (1000/1000)
+Test set (10/60): Average loss: 0.0253, Accuracy: 9910/10000 (99%)
+
+Training epoch: (11/60) batch: (6000/6000)
+Train set (11/60): Average loss: 0.0040, Accuracy: 59966/60000 (100%)
+
+Testing epoch: (11/60) batch: (1000/1000)
+Test set (11/60): Average loss: 0.0253, Accuracy: 9911/10000 (99%)
+
+
+Train set (12/60): Average loss: 0.0030, Accuracy: 59980/60000 (100%)
+
+Testing epoch: (12/60) batch: (1000/1000)
+Test set (12/60): Average loss: 0.0254, Accuracy: 9911/10000 (99%)
+
+Training epoch: (13/60) batch: (6000/6000)
+Train set (13/60): Average loss: 0.0025, Accuracy: 59987/60000 (100%)
+
+
+Test set (13/60): Average loss: 0.0243, Accuracy: 9911/10000 (99%)
+
+
+Train set (14/60): Average loss: 0.0021, Accuracy: 59989/60000 (100%)
+
+Testing epoch: (14/60) batch: (1000/1000)
+Test set (14/60): Average loss: 0.0269, Accuracy: 9905/10000 (99%)
+
+
+Train set (15/60): Average loss: 0.0019, Accuracy: 59992/60000 (100%)
+
+Testing epoch: (15/60) batch: (1000/1000)
+Test set (15/60): Average loss: 0.0257, Accuracy: 9912/10000 (99%)
+
+Training epoch: (16/60) batch: (6000/6000)
+Train set (16/60): Average loss: 0.0016, Accuracy: 59993/60000 (100%)
+
+
+Test set (16/60): Average loss: 0.0249, Accuracy: 9907/10000 (99%)
+
+Training epoch: (17/60) batch: (6000/6000)
+Train set (17/60): Average loss: 0.0014, Accuracy: 59995/60000 (100%)
+
+Testing epoch: (17/60) batch: (1000/1000)
+Test set (17/60): Average loss: 0.0248, Accuracy: 9916/10000 (99%)
+
+
+Train set (18/60): Average loss: 0.0013, Accuracy: 59995/60000 (100%)
+
+Testing epoch: (18/60) batch: (1000/1000)
+Test set (18/60): Average loss: 0.0248, Accuracy: 9913/10000 (99%)
+
+
+Train set (19/60): Average loss: 0.0012, Accuracy: 59995/60000 (100%)
+
+
+Test set (19/60): Average loss: 0.0254, Accuracy: 9907/10000 (99%)
+
+
+Train set (20/60): Average loss: 0.0011, Accuracy: 59996/60000 (100%)
+
+Testing epoch: (20/60) batch: (1000/1000)
+Test set (20/60): Average loss: 0.0251, Accuracy: 9908/10000 (99%)
+
+
+Train set (21/60): Average loss: 0.0010, Accuracy: 59997/60000 (100%)
+
+
+Test set (21/60): Average loss: 0.0254, Accuracy: 9910/10000 (99%)
+
+
+Train set (22/60): Average loss: 0.0009, Accuracy: 59997/60000 (100%)
+
+
+Test set (22/60): Average loss: 0.0252, Accuracy: 9910/10000 (99%)
+
+
+Train set (23/60): Average loss: 0.0009, Accuracy: 59998/60000 (100%)
+
+
+Test set (23/60): Average loss: 0.0254, Accuracy: 9914/10000 (99%)
+
+Training epoch: (24/60) batch: (6000/6000)
+Train set (24/60): Average loss: 0.0008, Accuracy: 59998/60000 (100%)
+
+Testing epoch: (24/60) batch: (1000/1000)
+Test set (24/60): Average loss: 0.0253, Accuracy: 9912/10000 (99%)
+
+Training epoch: (25/60) batch: (6000/6000)
+Train set (25/60): Average loss: 0.0007, Accuracy: 59999/60000 (100%)
+
+
+Test set (25/60): Average loss: 0.0255, Accuracy: 9915/10000 (99%)
+
+
+Train set (26/60): Average loss: 0.0007, Accuracy: 59998/60000 (100%)
+
+
+Test set (26/60): Average loss: 0.0262, Accuracy: 9912/10000 (99%)
+
+
+Train set (27/60): Average loss: 0.0007, Accuracy: 59999/60000 (100%)
+
+
+Test set (27/60): Average loss: 0.0258, Accuracy: 9914/10000 (99%)
+
+Training epoch: (28/60) batch: (6000/6000)
+Train set (28/60): Average loss: 0.0006, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (28/60) batch: (1000/1000)
+Test set (28/60): Average loss: 0.0257, Accuracy: 9911/10000 (99%)
+
+
+Train set (29/60): Average loss: 0.0006, Accuracy: 59999/60000 (100%)
+
+
+Test set (29/60): Average loss: 0.0259, Accuracy: 9912/10000 (99%)
+
+Training epoch: (30/60) batch: (6000/6000)
+Train set (30/60): Average loss: 0.0005, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (30/60) batch: (1000/1000)
+Test set (30/60): Average loss: 0.0261, Accuracy: 9912/10000 (99%)
+
+Training epoch: (31/60) batch: (6000/6000)
+Train set (31/60): Average loss: 0.0005, Accuracy: 59999/60000 (100%)
+
+
+Test set (31/60): Average loss: 0.0260, Accuracy: 9912/10000 (99%)
+
+
+Train set (32/60): Average loss: 0.0005, Accuracy: 59999/60000 (100%)
+
+
+Test set (32/60): Average loss: 0.0260, Accuracy: 9914/10000 (99%)
+
+
+Train set (33/60): Average loss: 0.0005, Accuracy: 59999/60000 (100%)
+
+
+Test set (33/60): Average loss: 0.0259, Accuracy: 9912/10000 (99%)
+
+Training epoch: (34/60) batch: (6000/6000)
+Train set (34/60): Average loss: 0.0004, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (34/60) batch: (1000/1000)
+Test set (34/60): Average loss: 0.0261, Accuracy: 9918/10000 (99%)
+
+Training epoch: (35/60) batch: (6000/6000)
+Train set (35/60): Average loss: 0.0004, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (35/60) batch: (1000/1000)
+Test set (35/60): Average loss: 0.0261, Accuracy: 9915/10000 (99%)
+
+Training epoch: (36/60) batch: (6000/6000)
+Train set (36/60): Average loss: 0.0004, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (36/60) batch: (1000/1000)
+Test set (36/60): Average loss: 0.0258, Accuracy: 9917/10000 (99%)
+
+Training epoch: (37/60) batch: (6000/6000)
+Train set (37/60): Average loss: 0.0004, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (37/60) batch: (1000/1000)
+Test set (37/60): Average loss: 0.0262, Accuracy: 9916/10000 (99%)
+
+Training epoch: (38/60) batch: (6000/6000)
+Train set (38/60): Average loss: 0.0004, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (38/60) batch: (1000/1000)
+Test set (38/60): Average loss: 0.0263, Accuracy: 9916/10000 (99%)
+
+Training epoch: (39/60) batch: (6000/6000)
+Train set (39/60): Average loss: 0.0004, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (39/60) batch: (1000/1000)
+Test set (39/60): Average loss: 0.0263, Accuracy: 9914/10000 (99%)
+
+Training epoch: (40/60) batch: (6000/6000)
+Train set (40/60): Average loss: 0.0003, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (40/60) batch: (1000/1000)
+Test set (40/60): Average loss: 0.0261, Accuracy: 9914/10000 (99%)
+
+
+Train set (41/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (41/60): Average loss: 0.0262, Accuracy: 9916/10000 (99%)
+
+
+Train set (42/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (42/60): Average loss: 0.0266, Accuracy: 9917/10000 (99%)
+
+
+Train set (43/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (43/60): Average loss: 0.0264, Accuracy: 9916/10000 (99%)
+
+Training epoch: (44/60) batch: (6000/6000)
+Train set (44/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (44/60) batch: (1000/1000)
+Test set (44/60): Average loss: 0.0266, Accuracy: 9914/10000 (99%)
+
+
+Train set (45/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (45/60): Average loss: 0.0266, Accuracy: 9915/10000 (99%)
+
+
+Train set (46/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (46/60): Average loss: 0.0267, Accuracy: 9916/10000 (99%)
+
+
+Train set (47/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (47/60): Average loss: 0.0266, Accuracy: 9915/10000 (99%)
+
+
+Train set (48/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (48/60): Average loss: 0.0266, Accuracy: 9918/10000 (99%)
+
+Training epoch: (49/60) batch: (6000/6000)
+Train set (49/60): Average loss: 0.0003, Accuracy: 60000/60000 (100%)
+
+
+Test set (49/60): Average loss: 0.0267, Accuracy: 9915/10000 (99%)
+
+
+Train set (50/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+
+Test set (50/60): Average loss: 0.0267, Accuracy: 9917/10000 (99%)
+
+Training epoch: (51/60) batch: (6000/6000)
+Train set (51/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+
+Test set (51/60): Average loss: 0.0269, Accuracy: 9915/10000 (99%)
+
+
+Train set (52/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+
+Test set (52/60): Average loss: 0.0268, Accuracy: 9915/10000 (99%)
+
+Training epoch: (53/60) batch: (6000/6000)
+Train set (53/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+
+Test set (53/60): Average loss: 0.0267, Accuracy: 9916/10000 (99%)
+
+Training epoch: (54/60) batch: (6000/6000)
+Train set (54/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (54/60) batch: (1000/1000)
+Test set (54/60): Average loss: 0.0266, Accuracy: 9918/10000 (99%)
+
+
+Train set (55/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (55/60) batch: (1000/1000)
+Test set (55/60): Average loss: 0.0266, Accuracy: 9918/10000 (99%)
+
+Training epoch: (56/60) batch: (6000/6000)
+Train set (56/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (56/60) batch: (1000/1000)
+Test set (56/60): Average loss: 0.0269, Accuracy: 9917/10000 (99%)
+
+
+Train set (57/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+
+Test set (57/60): Average loss: 0.0269, Accuracy: 9917/10000 (99%)
+
+
+Train set (58/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+
+Test set (58/60): Average loss: 0.0268, Accuracy: 9918/10000 (99%)
+
+
+Train set (59/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (59/60) batch: (1000/1000)
+Test set (59/60): Average loss: 0.0269, Accuracy: 9917/10000 (99%)
+
+Training epoch: (60/60) batch: (6000/6000)
+Train set (60/60): Average loss: 0.0002, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (60/60) batch: (1000/1000)
+Test set (60/60): Average loss: 0.0269, Accuracy: 9918/10000 (99%)
+
+Accuracy: 99.18%
+Training and evaluation finished
+================================================================================
+
+================================ Training model 3 ================================
+Model 2 + replace Sigmoid with ReLU with new learning rate
+
+learning_rate = 0.03
+batch_size = 10
+num_epochs = 60
+
+Training epoch: (1/60) batch: (6000/6000)
+Train set (1/60): Average loss: 0.1117, Accuracy: 57891/60000 (96%)
+
+
+Test set (1/60): Average loss: 0.0442, Accuracy: 9856/10000 (99%)
+
+Training epoch: (2/60) batch: (6000/6000)
+Train set (2/60): Average loss: 0.0385, Accuracy: 59284/60000 (99%)
+
+
+Test set (2/60): Average loss: 0.0303, Accuracy: 9890/10000 (99%)
+
+
+Train set (3/60): Average loss: 0.0262, Accuracy: 59509/60000 (99%)
+
+
+Test set (3/60): Average loss: 0.0383, Accuracy: 9868/10000 (99%)
+
+Training epoch: (4/60) batch: (6000/6000)
+Train set (4/60): Average loss: 0.0199, Accuracy: 59630/60000 (99%)
+
+Testing epoch: (4/60) batch: (1000/1000)
+Test set (4/60): Average loss: 0.0271, Accuracy: 9914/10000 (99%)
+
+Training epoch: (5/60) batch: (6000/6000)
+Train set (5/60): Average loss: 0.0144, Accuracy: 59723/60000 (100%)
+
+Testing epoch: (5/60) batch: (1000/1000)
+Test set (5/60): Average loss: 0.0272, Accuracy: 9914/10000 (99%)
+
+
+Train set (6/60): Average loss: 0.0115, Accuracy: 59787/60000 (100%)
+
+Testing epoch: (6/60) batch: (1000/1000)
+Test set (6/60): Average loss: 0.0315, Accuracy: 9909/10000 (99%)
+
+Training epoch: (7/60) batch: (6000/6000)
+Train set (7/60): Average loss: 0.0072, Accuracy: 59860/60000 (100%)
+
+
+Test set (7/60): Average loss: 0.0260, Accuracy: 9925/10000 (99%)
+
+
+Train set (8/60): Average loss: 0.0064, Accuracy: 59880/60000 (100%)
+
+
+Test set (8/60): Average loss: 0.0295, Accuracy: 9923/10000 (99%)
+
+Training epoch: (9/60) batch: (6000/6000)
+Train set (9/60): Average loss: 0.0048, Accuracy: 59909/60000 (100%)
+
+Testing epoch: (9/60) batch: (1000/1000)
+Test set (9/60): Average loss: 0.0322, Accuracy: 9914/10000 (99%)
+
+
+Train set (10/60): Average loss: 0.0066, Accuracy: 59871/60000 (100%)
+
+Testing epoch: (10/60) batch: (1000/1000)
+Test set (10/60): Average loss: 0.0381, Accuracy: 9908/10000 (99%)
+
+
+Train set (11/60): Average loss: 0.0059, Accuracy: 59881/60000 (100%)
+
+Testing epoch: (11/60) batch: (1000/1000)
+Test set (11/60): Average loss: 0.0392, Accuracy: 9919/10000 (99%)
+
+
+Train set (12/60): Average loss: 0.0081, Accuracy: 59834/60000 (100%)
+
+
+Test set (12/60): Average loss: 0.0391, Accuracy: 9916/10000 (99%)
+
+Training epoch: (13/60) batch: (6000/6000)
+Train set (13/60): Average loss: 0.0037, Accuracy: 59932/60000 (100%)
+
+
+Test set (13/60): Average loss: 0.0436, Accuracy: 9915/10000 (99%)
+
+
+Train set (14/60): Average loss: 0.0047, Accuracy: 59912/60000 (100%)
+
+
+Test set (14/60): Average loss: 0.0391, Accuracy: 9920/10000 (99%)
+
+Training epoch: (15/60) batch: (6000/6000)
+Train set (15/60): Average loss: 0.0021, Accuracy: 59958/60000 (100%)
+
+
+Test set (15/60): Average loss: 0.0380, Accuracy: 9925/10000 (99%)
+
+Training epoch: (16/60) batch: (6000/6000)
+Train set (16/60): Average loss: 0.0003, Accuracy: 59994/60000 (100%)
+
+
+Test set (16/60): Average loss: 0.0400, Accuracy: 9929/10000 (99%)
+
+Training epoch: (17/60) batch: (6000/6000)
+Train set (17/60): Average loss: 0.0002, Accuracy: 59998/60000 (100%)
+
+Testing epoch: (17/60) batch: (1000/1000)
+Test set (17/60): Average loss: 0.0386, Accuracy: 9931/10000 (99%)
+
+Training epoch: (18/60) batch: (6000/6000)
+Train set (18/60): Average loss: 0.0002, Accuracy: 59995/60000 (100%)
+
+
+Test set (18/60): Average loss: 0.0395, Accuracy: 9932/10000 (99%)
+
+Training epoch: (19/60) batch: (6000/6000)
+Train set (19/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (19/60) batch: (1000/1000)
+Test set (19/60): Average loss: 0.0406, Accuracy: 9929/10000 (99%)
+
+
+Train set (20/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (20/60) batch: (1000/1000)
+Test set (20/60): Average loss: 0.0413, Accuracy: 9930/10000 (99%)
+
+
+Train set (21/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (21/60) batch: (1000/1000)
+Test set (21/60): Average loss: 0.0417, Accuracy: 9931/10000 (99%)
+
+
+Train set (22/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (22/60): Average loss: 0.0420, Accuracy: 9931/10000 (99%)
+
+
+Train set (23/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (23/60) batch: (1000/1000)
+Test set (23/60): Average loss: 0.0423, Accuracy: 9931/10000 (99%)
+
+Training epoch: (24/60) batch: (6000/6000)
+Train set (24/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (24/60): Average loss: 0.0426, Accuracy: 9931/10000 (99%)
+
+Training epoch: (25/60) batch: (6000/6000)
+Train set (25/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (25/60): Average loss: 0.0428, Accuracy: 9931/10000 (99%)
+
+Training epoch: (26/60) batch: (6000/6000)
+Train set (26/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (26/60): Average loss: 0.0431, Accuracy: 9932/10000 (99%)
+
+
+Train set (27/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (27/60): Average loss: 0.0433, Accuracy: 9932/10000 (99%)
+
+Training epoch: (28/60) batch: (6000/6000)
+Train set (28/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (28/60): Average loss: 0.0435, Accuracy: 9931/10000 (99%)
+
+Training epoch: (29/60) batch: (6000/6000)
+Train set (29/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (29/60): Average loss: 0.0437, Accuracy: 9932/10000 (99%)
+
+Training epoch: (30/60) batch: (6000/6000)
+Train set (30/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (30/60) batch: (1000/1000)
+Test set (30/60): Average loss: 0.0440, Accuracy: 9934/10000 (99%)
+
+
+Train set (31/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (31/60) batch: (1000/1000)
+Test set (31/60): Average loss: 0.0441, Accuracy: 9934/10000 (99%)
+
+Training epoch: (32/60) batch: (6000/6000)
+Train set (32/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (32/60) batch: (1000/1000)
+Test set (32/60): Average loss: 0.0443, Accuracy: 9934/10000 (99%)
+
+Training epoch: (33/60) batch: (6000/6000)
+Train set (33/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (33/60): Average loss: 0.0445, Accuracy: 9934/10000 (99%)
+
+Training epoch: (34/60) batch: (6000/6000)
+Train set (34/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (34/60) batch: (1000/1000)
+Test set (34/60): Average loss: 0.0446, Accuracy: 9934/10000 (99%)
+
+Training epoch: (35/60) batch: (6000/6000)
+Train set (35/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (35/60): Average loss: 0.0448, Accuracy: 9935/10000 (99%)
+
+Training epoch: (36/60) batch: (6000/6000)
+Train set (36/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (36/60): Average loss: 0.0450, Accuracy: 9935/10000 (99%)
+
+Training epoch: (37/60) batch: (6000/6000)
+Train set (37/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (37/60) batch: (1000/1000)
+Test set (37/60): Average loss: 0.0451, Accuracy: 9935/10000 (99%)
+
+Training epoch: (38/60) batch: (6000/6000)
+Train set (38/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (38/60): Average loss: 0.0452, Accuracy: 9935/10000 (99%)
+
+
+Train set (39/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (39/60) batch: (1000/1000)
+Test set (39/60): Average loss: 0.0454, Accuracy: 9935/10000 (99%)
+
+
+Train set (40/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (40/60) batch: (1000/1000)
+Test set (40/60): Average loss: 0.0455, Accuracy: 9936/10000 (99%)
+
+
+Train set (41/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (41/60) batch: (1000/1000)
+Test set (41/60): Average loss: 0.0456, Accuracy: 9936/10000 (99%)
+
+
+Train set (42/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (42/60): Average loss: 0.0458, Accuracy: 9936/10000 (99%)
+
+Training epoch: (43/60) batch: (6000/6000)
+Train set (43/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (43/60): Average loss: 0.0459, Accuracy: 9936/10000 (99%)
+
+
+Train set (44/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (44/60): Average loss: 0.0460, Accuracy: 9936/10000 (99%)
+
+
+Train set (45/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (45/60) batch: (1000/1000)
+Test set (45/60): Average loss: 0.0461, Accuracy: 9936/10000 (99%)
+
+
+Train set (46/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (46/60) batch: (1000/1000)
+Test set (46/60): Average loss: 0.0462, Accuracy: 9936/10000 (99%)
+
+Training epoch: (47/60) batch: (6000/6000)
+Train set (47/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (47/60): Average loss: 0.0463, Accuracy: 9936/10000 (99%)
+
+
+Train set (48/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (48/60): Average loss: 0.0464, Accuracy: 9936/10000 (99%)
+
+
+Train set (49/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (49/60) batch: (1000/1000)
+Test set (49/60): Average loss: 0.0465, Accuracy: 9936/10000 (99%)
+
+
+Train set (50/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (50/60): Average loss: 0.0466, Accuracy: 9936/10000 (99%)
+
+
+Train set (51/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (51/60) batch: (1000/1000)
+Test set (51/60): Average loss: 0.0467, Accuracy: 9935/10000 (99%)
+
+
+Train set (52/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (52/60) batch: (1000/1000)
+Test set (52/60): Average loss: 0.0468, Accuracy: 9935/10000 (99%)
+
+Training epoch: (53/60) batch: (6000/6000)
+Train set (53/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (53/60): Average loss: 0.0469, Accuracy: 9935/10000 (99%)
+
+Training epoch: (54/60) batch: (6000/6000)
+Train set (54/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (54/60) batch: (1000/1000)
+Test set (54/60): Average loss: 0.0470, Accuracy: 9935/10000 (99%)
+
+Training epoch: (55/60) batch: (6000/6000)
+Train set (55/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (55/60) batch: (1000/1000)
+Test set (55/60): Average loss: 0.0471, Accuracy: 9935/10000 (99%)
+
+Training epoch: (56/60) batch: (6000/6000)
+Train set (56/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (56/60) batch: (1000/1000)
+Test set (56/60): Average loss: 0.0471, Accuracy: 9935/10000 (99%)
+
+
+Train set (57/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (57/60): Average loss: 0.0472, Accuracy: 9935/10000 (99%)
+
+Training epoch: (58/60) batch: (6000/6000)
+Train set (58/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (58/60): Average loss: 0.0473, Accuracy: 9935/10000 (99%)
+
+
+Train set (59/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (59/60): Average loss: 0.0474, Accuracy: 9935/10000 (99%)
+
+
+Train set (60/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (60/60): Average loss: 0.0475, Accuracy: 9935/10000 (99%)
+
+Accuracy: 99.36%
+Training and evaluation finished
+================================================================================
+
+================================ Training model 4 ================================
+Model 3 + another fully connected (FC) layer (with 100 neurons)
+
+learning_rate = 0.03
+batch_size = 10
+num_epochs = 60
+
+
+Train set (1/60): Average loss: 0.1365, Accuracy: 57480/60000 (96%)
+
+Testing epoch: (1/60) batch: (1000/1000)
+Test set (1/60): Average loss: 0.0454, Accuracy: 9848/10000 (98%)
+
+Training epoch: (2/60) batch: (6000/6000)
+Train set (2/60): Average loss: 0.0433, Accuracy: 59209/60000 (99%)
+
+
+Test set (2/60): Average loss: 0.0544, Accuracy: 9823/10000 (98%)
+
+Training epoch: (3/60) batch: (6000/6000)
+Train set (3/60): Average loss: 0.0286, Accuracy: 59472/60000 (99%)
+
+Testing epoch: (3/60) batch: (1000/1000)
+Test set (3/60): Average loss: 0.0336, Accuracy: 9897/10000 (99%)
+
+Training epoch: (4/60) batch: (6000/6000)
+Train set (4/60): Average loss: 0.0212, Accuracy: 59618/60000 (99%)
+
+Testing epoch: (4/60) batch: (1000/1000)
+Test set (4/60): Average loss: 0.0349, Accuracy: 9888/10000 (99%)
+
+
+Train set (5/60): Average loss: 0.0142, Accuracy: 59756/60000 (100%)
+
+
+Test set (5/60): Average loss: 0.0285, Accuracy: 9921/10000 (99%)
+
+
+Train set (6/60): Average loss: 0.0113, Accuracy: 59785/60000 (100%)
+
+
+Test set (6/60): Average loss: 0.0368, Accuracy: 9892/10000 (99%)
+
+
+Train set (7/60): Average loss: 0.0091, Accuracy: 59822/60000 (100%)
+
+
+Test set (7/60): Average loss: 0.0383, Accuracy: 9906/10000 (99%)
+
+
+Train set (8/60): Average loss: 0.0084, Accuracy: 59837/60000 (100%)
+
+
+Test set (8/60): Average loss: 0.0391, Accuracy: 9895/10000 (99%)
+
+
+Train set (9/60): Average loss: 0.0057, Accuracy: 59908/60000 (100%)
+
+Testing epoch: (9/60) batch: (1000/1000)
+Test set (9/60): Average loss: 0.0356, Accuracy: 9917/10000 (99%)
+
+
+Train set (10/60): Average loss: 0.0054, Accuracy: 59905/60000 (100%)
+
+
+Test set (10/60): Average loss: 0.0320, Accuracy: 9927/10000 (99%)
+
+Training epoch: (11/60) batch: (6000/6000)
+Train set (11/60): Average loss: 0.0047, Accuracy: 59921/60000 (100%)
+
+
+Test set (11/60): Average loss: 0.0374, Accuracy: 9912/10000 (99%)
+
+
+Train set (12/60): Average loss: 0.0042, Accuracy: 59921/60000 (100%)
+
+
+Test set (12/60): Average loss: 0.0330, Accuracy: 9928/10000 (99%)
+
+Training epoch: (13/60) batch: (6000/6000)
+Train set (13/60): Average loss: 0.0046, Accuracy: 59919/60000 (100%)
+
+Testing epoch: (13/60) batch: (1000/1000)
+Test set (13/60): Average loss: 0.0404, Accuracy: 9907/10000 (99%)
+
+
+Train set (14/60): Average loss: 0.0054, Accuracy: 59891/60000 (100%)
+
+
+Test set (14/60): Average loss: 0.0395, Accuracy: 9927/10000 (99%)
+
+
+Train set (15/60): Average loss: 0.0059, Accuracy: 59901/60000 (100%)
+
+
+Test set (15/60): Average loss: 0.0407, Accuracy: 9913/10000 (99%)
+
+Training epoch: (16/60) batch: (6000/6000)
+Train set (16/60): Average loss: 0.0035, Accuracy: 59948/60000 (100%)
+
+Testing epoch: (16/60) batch: (1000/1000)
+Test set (16/60): Average loss: 0.0382, Accuracy: 9926/10000 (99%)
+
+
+Train set (17/60): Average loss: 0.0057, Accuracy: 59904/60000 (100%)
+
+
+Test set (17/60): Average loss: 0.0423, Accuracy: 9910/10000 (99%)
+
+Training epoch: (18/60) batch: (6000/6000)
+Train set (18/60): Average loss: 0.0034, Accuracy: 59941/60000 (100%)
+
+
+Test set (18/60): Average loss: 0.0561, Accuracy: 9886/10000 (99%)
+
+
+Train set (19/60): Average loss: 0.0020, Accuracy: 59967/60000 (100%)
+
+
+Test set (19/60): Average loss: 0.0384, Accuracy: 9930/10000 (99%)
+
+Training epoch: (20/60) batch: (6000/6000)
+Train set (20/60): Average loss: 0.0032, Accuracy: 59936/60000 (100%)
+
+Testing epoch: (20/60) batch: (1000/1000)
+Test set (20/60): Average loss: 0.0425, Accuracy: 9916/10000 (99%)
+
+
+Train set (21/60): Average loss: 0.0030, Accuracy: 59937/60000 (100%)
+
+
+Test set (21/60): Average loss: 0.0473, Accuracy: 9912/10000 (99%)
+
+
+Train set (22/60): Average loss: 0.0043, Accuracy: 59922/60000 (100%)
+
+
+Test set (22/60): Average loss: 0.0412, Accuracy: 9914/10000 (99%)
+
+
+Train set (23/60): Average loss: 0.0015, Accuracy: 59972/60000 (100%)
+
+
+Test set (23/60): Average loss: 0.0523, Accuracy: 9901/10000 (99%)
+
+Training epoch: (24/60) batch: (6000/6000)
+Train set (24/60): Average loss: 0.0003, Accuracy: 59994/60000 (100%)
+
+Testing epoch: (24/60) batch: (1000/1000)
+Test set (24/60): Average loss: 0.0477, Accuracy: 9921/10000 (99%)
+
+
+Train set (25/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (25/60): Average loss: 0.0418, Accuracy: 9935/10000 (99%)
+
+Training epoch: (26/60) batch: (6000/6000)
+Train set (26/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (26/60): Average loss: 0.0421, Accuracy: 9936/10000 (99%)
+
+
+Train set (27/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (27/60): Average loss: 0.0425, Accuracy: 9935/10000 (99%)
+
+
+Train set (28/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (28/60) batch: (1000/1000)
+Test set (28/60): Average loss: 0.0429, Accuracy: 9935/10000 (99%)
+
+Training epoch: (29/60) batch: (6000/6000)
+Train set (29/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (29/60): Average loss: 0.0432, Accuracy: 9935/10000 (99%)
+
+Training epoch: (30/60) batch: (6000/6000)
+Train set (30/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (30/60): Average loss: 0.0435, Accuracy: 9935/10000 (99%)
+
+
+Train set (31/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (31/60): Average loss: 0.0438, Accuracy: 9935/10000 (99%)
+
+
+Train set (32/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (32/60): Average loss: 0.0440, Accuracy: 9935/10000 (99%)
+
+
+Train set (33/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (33/60): Average loss: 0.0443, Accuracy: 9935/10000 (99%)
+
+Training epoch: (34/60) batch: (6000/6000)
+Train set (34/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (34/60) batch: (1000/1000)
+Test set (34/60): Average loss: 0.0445, Accuracy: 9935/10000 (99%)
+
+Training epoch: (35/60) batch: (6000/6000)
+Train set (35/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (35/60): Average loss: 0.0447, Accuracy: 9936/10000 (99%)
+
+Training epoch: (36/60) batch: (6000/6000)
+Train set (36/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (36/60) batch: (1000/1000)
+Test set (36/60): Average loss: 0.0449, Accuracy: 9936/10000 (99%)
+
+Training epoch: (37/60) batch: (6000/6000)
+Train set (37/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (37/60) batch: (1000/1000)
+Test set (37/60): Average loss: 0.0451, Accuracy: 9936/10000 (99%)
+
+
+Train set (38/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (38/60) batch: (1000/1000)
+Test set (38/60): Average loss: 0.0453, Accuracy: 9936/10000 (99%)
+
+Training epoch: (39/60) batch: (6000/6000)
+Train set (39/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (39/60) batch: (1000/1000)
+Test set (39/60): Average loss: 0.0454, Accuracy: 9936/10000 (99%)
+
+
+Train set (40/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (40/60): Average loss: 0.0456, Accuracy: 9936/10000 (99%)
+
+Training epoch: (41/60) batch: (6000/6000)
+Train set (41/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (41/60) batch: (1000/1000)
+Test set (41/60): Average loss: 0.0458, Accuracy: 9936/10000 (99%)
+
+Training epoch: (42/60) batch: (6000/6000)
+Train set (42/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (42/60) batch: (1000/1000)
+Test set (42/60): Average loss: 0.0459, Accuracy: 9936/10000 (99%)
+
+Training epoch: (43/60) batch: (6000/6000)
+Train set (43/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (43/60) batch: (1000/1000)
+Test set (43/60): Average loss: 0.0460, Accuracy: 9936/10000 (99%)
+
+
+Train set (44/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (44/60) batch: (1000/1000)
+Test set (44/60): Average loss: 0.0462, Accuracy: 9936/10000 (99%)
+
+Training epoch: (45/60) batch: (6000/6000)
+Train set (45/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (45/60) batch: (1000/1000)
+Test set (45/60): Average loss: 0.0463, Accuracy: 9936/10000 (99%)
+
+Training epoch: (46/60) batch: (6000/6000)
+Train set (46/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (46/60) batch: (1000/1000)
+Test set (46/60): Average loss: 0.0464, Accuracy: 9936/10000 (99%)
+
+Training epoch: (47/60) batch: (6000/6000)
+Train set (47/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (47/60): Average loss: 0.0466, Accuracy: 9936/10000 (99%)
+
+Training epoch: (48/60) batch: (6000/6000)
+Train set (48/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (48/60) batch: (1000/1000)
+Test set (48/60): Average loss: 0.0467, Accuracy: 9936/10000 (99%)
+
+
+Train set (49/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (49/60): Average loss: 0.0468, Accuracy: 9936/10000 (99%)
+
+
+Train set (50/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (50/60): Average loss: 0.0469, Accuracy: 9936/10000 (99%)
+
+
+Train set (51/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (51/60) batch: (1000/1000)
+Test set (51/60): Average loss: 0.0470, Accuracy: 9936/10000 (99%)
+
+
+Train set (52/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (52/60): Average loss: 0.0471, Accuracy: 9936/10000 (99%)
+
+Training epoch: (53/60) batch: (6000/6000)
+Train set (53/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (53/60) batch: (1000/1000)
+Test set (53/60): Average loss: 0.0472, Accuracy: 9936/10000 (99%)
+
+
+Train set (54/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (54/60): Average loss: 0.0473, Accuracy: 9936/10000 (99%)
+
+
+Train set (55/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (55/60) batch: (1000/1000)
+Test set (55/60): Average loss: 0.0474, Accuracy: 9936/10000 (99%)
+
+
+Train set (56/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (56/60) batch: (1000/1000)
+Test set (56/60): Average loss: 0.0475, Accuracy: 9936/10000 (99%)
+
+
+Train set (57/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (57/60) batch: (1000/1000)
+Test set (57/60): Average loss: 0.0476, Accuracy: 9936/10000 (99%)
+
+
+Train set (58/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (58/60) batch: (1000/1000)
+Test set (58/60): Average loss: 0.0477, Accuracy: 9936/10000 (99%)
+
+Training epoch: (59/60) batch: (6000/6000)
+Train set (59/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (59/60) batch: (1000/1000)
+Test set (59/60): Average loss: 0.0478, Accuracy: 9936/10000 (99%)
+
+
+Train set (60/60): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (60/60): Average loss: 0.0479, Accuracy: 9936/10000 (99%)
+
+Accuracy: 99.36%
+Training and evaluation finished
+================================================================================
+
+================================ Training model 5 ================================
+Model 4 + Changed the neurons numbers in FC layers into 1000 with Dropout (with a rate of 0.5).
+
+learning_rate = 0.03
+batch_size = 10
+num_epochs = 40
+
+
+Train set (1/40): Average loss: 0.1389, Accuracy: 57485/60000 (96%)
+
+
+Test set (1/40): Average loss: 0.0668, Accuracy: 9791/10000 (98%)
+
+Training epoch: (2/40) batch: (6000/6000)
+Train set (2/40): Average loss: 0.0461, Accuracy: 59188/60000 (99%)
+
+
+Test set (2/40): Average loss: 0.0271, Accuracy: 9916/10000 (99%)
+
+
+Train set (3/40): Average loss: 0.0297, Accuracy: 59460/60000 (99%)
+
+
+Test set (3/40): Average loss: 0.0304, Accuracy: 9913/10000 (99%)
+
+Training epoch: (4/40) batch: (6000/6000)
+Train set (4/40): Average loss: 0.0221, Accuracy: 59629/60000 (99%)
+
+Testing epoch: (4/40) batch: (1000/1000)
+Test set (4/40): Average loss: 0.0307, Accuracy: 9921/10000 (99%)
+
+Training epoch: (5/40) batch: (6000/6000)
+Train set (5/40): Average loss: 0.0146, Accuracy: 59742/60000 (100%)
+
+Testing epoch: (5/40) batch: (1000/1000)
+Test set (5/40): Average loss: 0.0288, Accuracy: 9918/10000 (99%)
+
+Training epoch: (6/40) batch: (6000/6000)
+Train set (6/40): Average loss: 0.0122, Accuracy: 59765/60000 (100%)
+
+
+Test set (6/40): Average loss: 0.0274, Accuracy: 9923/10000 (99%)
+
+
+Train set (7/40): Average loss: 0.0096, Accuracy: 59818/60000 (100%)
+
+Testing epoch: (7/40) batch: (1000/1000)
+Test set (7/40): Average loss: 0.0301, Accuracy: 9924/10000 (99%)
+
+Training epoch: (8/40) batch: (6000/6000)
+Train set (8/40): Average loss: 0.0070, Accuracy: 59872/60000 (100%)
+
+
+Test set (8/40): Average loss: 0.0316, Accuracy: 9918/10000 (99%)
+
+
+Train set (9/40): Average loss: 0.0039, Accuracy: 59919/60000 (100%)
+
+
+Test set (9/40): Average loss: 0.0393, Accuracy: 9917/10000 (99%)
+
+
+Train set (10/40): Average loss: 0.0065, Accuracy: 59889/60000 (100%)
+
+Testing epoch: (10/40) batch: (1000/1000)
+Test set (10/40): Average loss: 0.0380, Accuracy: 9918/10000 (99%)
+
+
+Train set (11/40): Average loss: 0.0043, Accuracy: 59919/60000 (100%)
+
+
+Test set (11/40): Average loss: 0.0432, Accuracy: 9904/10000 (99%)
+
+Training epoch: (12/40) batch: (6000/6000)
+Train set (12/40): Average loss: 0.0032, Accuracy: 59945/60000 (100%)
+
+
+Test set (12/40): Average loss: 0.0329, Accuracy: 9933/10000 (99%)
+
+
+Train set (13/40): Average loss: 0.0028, Accuracy: 59948/60000 (100%)
+
+
+Test set (13/40): Average loss: 0.0390, Accuracy: 9920/10000 (99%)
+
+
+Train set (14/40): Average loss: 0.0021, Accuracy: 59968/60000 (100%)
+
+
+Test set (14/40): Average loss: 0.0407, Accuracy: 9923/10000 (99%)
+
+
+Train set (15/40): Average loss: 0.0038, Accuracy: 59943/60000 (100%)
+
+
+Test set (15/40): Average loss: 0.0323, Accuracy: 9929/10000 (99%)
+
+Training epoch: (16/40) batch: (6000/6000)
+Train set (16/40): Average loss: 0.0028, Accuracy: 59954/60000 (100%)
+
+
+Test set (16/40): Average loss: 0.0410, Accuracy: 9922/10000 (99%)
+
+Training epoch: (17/40) batch: (6000/6000)
+Train set (17/40): Average loss: 0.0035, Accuracy: 59934/60000 (100%)
+
+Testing epoch: (17/40) batch: (1000/1000)
+Test set (17/40): Average loss: 0.0422, Accuracy: 9909/10000 (99%)
+
+
+Train set (18/40): Average loss: 0.0018, Accuracy: 59969/60000 (100%)
+
+
+Test set (18/40): Average loss: 0.0383, Accuracy: 9925/10000 (99%)
+
+
+Train set (19/40): Average loss: 0.0005, Accuracy: 59994/60000 (100%)
+
+
+Test set (19/40): Average loss: 0.0412, Accuracy: 9928/10000 (99%)
+
+Training epoch: (20/40) batch: (6000/6000)
+Train set (20/40): Average loss: 0.0009, Accuracy: 59985/60000 (100%)
+
+Testing epoch: (20/40) batch: (1000/1000)
+Test set (20/40): Average loss: 0.0389, Accuracy: 9922/10000 (99%)
+
+
+Train set (21/40): Average loss: 0.0008, Accuracy: 59994/60000 (100%)
+
+
+Test set (21/40): Average loss: 0.0381, Accuracy: 9920/10000 (99%)
+
+
+Train set (22/40): Average loss: 0.0001, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (22/40) batch: (1000/1000)
+Test set (22/40): Average loss: 0.0381, Accuracy: 9926/10000 (99%)
+
+Training epoch: (23/40) batch: (6000/6000)
+Train set (23/40): Average loss: 0.0001, Accuracy: 59999/60000 (100%)
+
+Testing epoch: (23/40) batch: (1000/1000)
+Test set (23/40): Average loss: 0.0391, Accuracy: 9931/10000 (99%)
+
+Training epoch: (24/40) batch: (6000/6000)
+Train set (24/40): Average loss: 0.0001, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (24/40) batch: (1000/1000)
+Test set (24/40): Average loss: 0.0401, Accuracy: 9930/10000 (99%)
+
+Training epoch: (25/40) batch: (6000/6000)
+Train set (25/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (25/40) batch: (1000/1000)
+Test set (25/40): Average loss: 0.0409, Accuracy: 9930/10000 (99%)
+
+
+Train set (26/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (26/40): Average loss: 0.0420, Accuracy: 9928/10000 (99%)
+
+
+Train set (27/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (27/40): Average loss: 0.0430, Accuracy: 9930/10000 (99%)
+
+
+Train set (28/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (28/40): Average loss: 0.0435, Accuracy: 9928/10000 (99%)
+
+
+Train set (29/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (29/40): Average loss: 0.0436, Accuracy: 9928/10000 (99%)
+
+
+Train set (30/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (30/40): Average loss: 0.0438, Accuracy: 9929/10000 (99%)
+
+
+Train set (31/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (31/40): Average loss: 0.0439, Accuracy: 9929/10000 (99%)
+
+Training epoch: (32/40) batch: (6000/6000)
+Train set (32/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (32/40): Average loss: 0.0439, Accuracy: 9930/10000 (99%)
+
+
+Train set (33/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (33/40): Average loss: 0.0443, Accuracy: 9931/10000 (99%)
+
+Training epoch: (34/40) batch: (6000/6000)
+Train set (34/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (34/40) batch: (1000/1000)
+Test set (34/40): Average loss: 0.0453, Accuracy: 9929/10000 (99%)
+
+
+Train set (35/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (35/40): Average loss: 0.0453, Accuracy: 9929/10000 (99%)
+
+Training epoch: (36/40) batch: (6000/6000)
+Train set (36/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (36/40) batch: (1000/1000)
+Test set (36/40): Average loss: 0.0453, Accuracy: 9929/10000 (99%)
+
+Training epoch: (37/40) batch: (6000/6000)
+Train set (37/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (37/40): Average loss: 0.0454, Accuracy: 9928/10000 (99%)
+
+Training epoch: (38/40) batch: (6000/6000)
+Train set (38/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+Testing epoch: (38/40) batch: (1000/1000)
+Test set (38/40): Average loss: 0.0453, Accuracy: 9929/10000 (99%)
+
+
+Train set (39/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (39/40): Average loss: 0.0453, Accuracy: 9930/10000 (99%)
+
+
+Train set (40/40): Average loss: 0.0000, Accuracy: 60000/60000 (100%)
+
+
+Test set (40/40): Average loss: 0.0455, Accuracy: 9930/10000 (99%)
+
+Accuracy: 99.33%
+Training and evaluation finished
+================================================================================

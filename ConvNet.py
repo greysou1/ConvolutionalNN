@@ -9,6 +9,8 @@ class ConvNet(nn.Module):
         
         # Define various layers here, such as in the tutorial example
         # self.conv1 = nn.Conv2D(...)
+        # Pool over 2x2 regions, 40 kernels, stride =1, with kernel size of 5x5.
+        # define first conv laver 
         self.conv1 = nn.Conv2d(
             in_channels=1,
             out_channels=40,
@@ -16,7 +18,10 @@ class ConvNet(nn.Module):
             stride=(1, 1),
             padding=(1, 1),
         )
+        # define pool layer
         self.pool = nn.MaxPool2d(kernel_size=(2, 2), stride=(1, 1))
+        
+        # define second conv layer
         self.conv2 = nn.Conv2d(
             in_channels=40,
             out_channels=40,
@@ -25,17 +30,25 @@ class ConvNet(nn.Module):
             padding=(1, 1),
         )
         
+        # Fully connected layers
+        # define the layers according to the model
         if mode == 1:
+            # a fully connected (FC) hidden layer (with 100 neurons)
             self.fc1 = nn.Linear(image_size, 100)
             self.fc2 = nn.Linear(100, num_classes)
         if mode == 2 or mode == 3:
-            self.fc1 = nn.Linear(19360, 100)
+            # since model 2 and model 3 have conv layers
+            # define the input to the FC layers as the output of the conv layer
+            self.fc1 = nn.Linear(22 * 22 * 40, 100)
             self.fc2 = nn.Linear(100, num_classes)
         if mode == 4:
+            # Add another fully connected (FC) layer now (with 100 neurons) to the network built in STEP 3 (model 2 and model 3)
             self.fc1 = nn.Linear(23 * 23 * 40, 100)
             self.fc2 = nn.Linear(100, 100)
             self.fc3 = nn.Linear(100, num_classes)
         if mode == 5:
+            # Change the neurons numbers in FC layers into 100
+            # use Dropout (with a rate of 0.5)
             self.fc1 = nn.Linear(23 * 23 * 40, 1000)
             self.fc2 = nn.Linear(1000, 1000)
             self.fc3 = nn.Linear(1000, num_classes)
@@ -62,7 +75,7 @@ class ConvNet(nn.Module):
         
     # Baseline model. step 1
     def model_1(self, X):
-        # ======================================================================
+        # ==================== Model 1 ====================
         # One fully connected layer. STEP 1: Create a fully connected (FC) hidden layer (with 100 neurons) with Sigmoid activation function.
         # Train it with SGD with a learning rate of 0.1 (a total of 60 epoch), a mini-batch size of 10, and no regularization.
         X = X.reshape(X.shape[0], -1)
@@ -73,12 +86,14 @@ class ConvNet(nn.Module):
 
     # Use two convolutional layers.
     def model_2(self, X):
-        # ======================================================================
-        # Two convolutional layers + one fully connnected layer.
+        # ==================== Model 2 ====================
+        # Two convolutional layers 
         X = torch.sigmoid(self.conv1(X))
         X = self.pool(X)
         X = torch.sigmoid(self.conv2(X))
         X = self.pool(X)
+        
+        # One fully connnected layer.
         X = X.reshape(X.shape[0], -1)
         X = torch.sigmoid(self.fc1(X))
         X = self.fc2(X)
@@ -87,12 +102,14 @@ class ConvNet(nn.Module):
 
     # Replace sigmoid with ReLU.
     def model_3(self, X):
-        # ======================================================================
-        # Two convolutional layers + one fully connected layer, with ReLU.
+        # ==================== Model 3 ====================
+        # Two convolutional layers 
         X = F.relu(self.conv1(X))
         X = self.pool(X)
         X = F.relu(self.conv2(X))
         X = self.pool(X)
+        
+        # + one fully connected layer, with ReLU.
         X = X.reshape(X.shape[0], -1)
         X = F.relu(self.fc1(X))
         X = self.fc2(X)
@@ -101,12 +118,14 @@ class ConvNet(nn.Module):
 
     # Add one extra fully connected layer.
     def model_4(self, X):
-        # ======================================================================
-        # Two convolutional layers + two fully connected layers, with ReLU.
+        # ==================== Model 4 ====================
+        # Two convolutional layers 
         X = F.relu(self.conv1(X))
         X = self.pool(X)
         x = F.relu(self.conv2(X))
         X = self.pool(X)
+        
+        # + two fully connected layers, with ReLU.
         X = x.reshape(X.shape[0], -1)
         X = F.relu(self.fc1(X))
         X = F.relu(self.fc2(X))
@@ -116,13 +135,14 @@ class ConvNet(nn.Module):
 
     # Use Dropout now.
     def model_5(self, X):
-        # ======================================================================
-        # Two convolutional layers + two fully connected layers, with ReLU.
-        # and  + Dropout.
+        # ==================== Model 5 ====================
+        # Two convolutional layers 
         X = F.relu(self.conv1(X))
         X = self.pool(X)
         x = F.relu(self.conv2(X))
         X = self.pool(X)
+
+        # two fully connected layers, with ReLU. and  + Dropout.
         X = x.reshape(X.shape[0], -1)
         X = F.relu(self.fc1(X))
         X = F.relu(self.fc2(X))
