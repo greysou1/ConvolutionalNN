@@ -204,11 +204,11 @@ learning_rate = 0.01
 batch_size = 10
 num_epochs = 60
 
-print(('='*10)+'Training model 1'+('='*10))
+print('\n\n'+('='*10)+'Training model 1'+('='*10))
 print('A fully connected (FC) hidden layer (with 100 neurons) with Sigmoid activation function.')
 print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
-run_model(model=1, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)    
-
+run_model(mode=1, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)    
+print('='*26)
 # ================== Model 2 ==================
 learning_rate = 0.01
 batch_size = 10
@@ -218,7 +218,8 @@ print(('='*10)+'Training model 2'+('='*10))
 print('Model 1 + two convolutional layer that pool over 2x2 regions, 40 kernels, stride =1, with kernel size of 5x5.')
 print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
-run_model(model=2, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+run_model(mode=2, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+print('='*26)
 
 # ================== Model 3 ==================
 learning_rate = 0.03
@@ -229,7 +230,8 @@ print(('='*10)+'Training model 3'+('='*10))
 print('Model 2 + replace Sigmoid with ReLU with new learning rate')
 print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
-run_model(model=3, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+run_model(mode=3, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+print('='*26)
 
 # ================== Model 4 ==================
 learning_rate = 0.03
@@ -240,7 +242,8 @@ print(('='*10)+'Training model 4'+('='*10))
 print('Model 3 + another fully connected (FC) layer (with 100 neurons')
 print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
-run_model(model=4, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+run_model(mode=4, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+print('='*26)
 
 # ================== Model 5 ==================
 learning_rate = 0.03
@@ -251,4 +254,5 @@ print(('='*10)+'Training model 5'+('='*10))
 print('Model 4 + Changed the neurons numbers in FC layers into 1000 with Dropout (with a rate of 0.5).')
 print('\nlearning_rate = {}\nbatch_size = {}\nnum_epochs = {}\n'.format(learning_rate, batch_size, num_epochs))
 
-run_model(model=5, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+run_model(mode=5, learning_rate=learning_rate, batch_size=batch_size, num_epochs=num_epochs)
+print('='*26)
